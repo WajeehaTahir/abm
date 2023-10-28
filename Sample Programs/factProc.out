@@ -1,0 +1,12 @@
+
+factProc.abm ( Computes 5 factorial
+using a loop )
+
+function call to fact may be seen as
+fact( f, n );
+function fact prototype may be seen as
+fact( INOUT t; IN i )
+
+5 factorial is:
+120
+

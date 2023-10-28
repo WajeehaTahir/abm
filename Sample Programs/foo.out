@@ -1,0 +1,24 @@
+
+"Consider the CALLER the routine which
+is calling the CALLEE"
+
+before foo r is:
+2
+-------------------------------------
+p is a formal parameter and
+r is an actual parameter
+therefore the call may be seen as
+foo( r );
+and function foo may be seen as
+foo( int p )
+-------------------------------------
+in foo r is local.
+therefore  r is:
+0
+-------------------------------------
+in callee foo, the value of p is:
+2
+-------------------------------------
+value of p in caller function is:
+0
+

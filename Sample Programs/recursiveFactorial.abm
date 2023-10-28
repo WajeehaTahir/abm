@@ -1,0 +1,63 @@
+show 	Computes Factorial  
+lvalue a
+push 5 
+:=
+
+begin
+	lvalue n
+	rvalue a
+	:=
+	call factorial
+	lvalue ret
+	rvalue n1
+	:=
+end
+
+show Factorial of 
+rvalue a
+print
+pop
+show equals
+rvalue ret
+print
+pop
+halt
+
+label factorial
+rvalue n
+gofalse final
+
+begin
+	lvalue n
+	rvalue n
+	push 1
+	-
+	:=
+      call factorial
+	lvalue ret
+	rvalue n1
+	:=
+end
+lvalue n1
+rvalue ret
+rvalue n
+*
+:=
+return
+
+label final
+lvalue n1
+push 1
+:=
+return
+/* These comments are to illustrate the result produced by 
+ * the function. You may delete them if your solution is not
+ * able to handle C style comments.
+ *
+ [jackson]$ ./abm recursiveFactorial.abm
+	Computes Factorial 
+ Factorial of 
+ 5
+ equals
+ 120
+ */ 

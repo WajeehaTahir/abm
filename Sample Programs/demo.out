@@ -1,0 +1,20 @@
+
+This code illustrates parameter passing strategy.
+
+before function work:
+value of x is:
+0
+value of f is:
+5
+--------------------------------
+the call to function work may be seen as
+work( f, x );
+and function work may be seen as
+work( INOUT int ff, INOUT int xx )
+---------------------------------
+after function work:
+value of x is:
+1
+value of f is:
+6
+
